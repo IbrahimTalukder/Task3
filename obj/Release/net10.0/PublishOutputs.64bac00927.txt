@@ -1,0 +1,7 @@
+C:\Users\Ibrahim Talukder\Desktop\Task3\bin\Release\net10.0\publish\Task3.exe
+C:\Users\Ibrahim Talukder\Desktop\Task3\bin\Release\net10.0\publish\appsettings.Development.json
+C:\Users\Ibrahim Talukder\Desktop\Task3\bin\Release\net10.0\publish\appsettings.json
+C:\Users\Ibrahim Talukder\Desktop\Task3\bin\Release\net10.0\publish\Task3.dll
+C:\Users\Ibrahim Talukder\Desktop\Task3\bin\Release\net10.0\publish\Task3.deps.json
+C:\Users\Ibrahim Talukder\Desktop\Task3\bin\Release\net10.0\publish\Task3.runtimeconfig.json
+C:\Users\Ibrahim Talukder\Desktop\Task3\bin\Release\net10.0\publish\Task3.pdb
