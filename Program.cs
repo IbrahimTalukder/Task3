@@ -1,13 +1,10 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Hosting;
-
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
 app.MapGet("/", () => "Task 3 is running");
 
-app.MapGet("/ibrahimtalukder039_gmail_com", (int? x, int? y) =>
+app.MapGet("/{email}", (string email, int? x, int? y) =>
 {
     if (x == null || y == null || x <= 0 || y <= 0)
     {
@@ -17,7 +14,7 @@ app.MapGet("/ibrahimtalukder039_gmail_com", (int? x, int? y) =>
     int a = x.Value;
     int b = y.Value;
 
-    int GCD(int m, int n)
+    int gcd(int m, int n)
     {
         while (n != 0)
         {
@@ -29,7 +26,7 @@ app.MapGet("/ibrahimtalukder039_gmail_com", (int? x, int? y) =>
         return m;
     }
 
-    int lcm = Math.Abs(a * b) / GCD(a, b);
+    int lcm = Math.Abs(a * b) / gcd(a, b);
 
     return lcm.ToString();
 });
