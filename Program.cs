@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Hosting;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
@@ -14,7 +17,7 @@ app.MapGet("/lcm", (int? x, int? y) =>
     int a = x.Value;
     int b = y.Value;
 
-    int gcd(int m, int n)
+    int GCD(int m, int n)
     {
         while (n != 0)
         {
@@ -22,10 +25,11 @@ app.MapGet("/lcm", (int? x, int? y) =>
             n = m % n;
             m = temp;
         }
+
         return m;
     }
 
-    int lcm = Math.Abs(a * b) / gcd(a, b);
+    int lcm = Math.Abs(a * b) / GCD(a, b);
 
     return lcm.ToString();
 });
