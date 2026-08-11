@@ -7,7 +7,7 @@ var app = builder.Build();
 
 app.MapGet("/", () => "Task 3 is running");
 
-app.MapGet("/lcm", (int? x, int? y) =>
+app.MapGet("/ibrahimtalukder039_gmail_com", (int? x, int? y) =>
 {
     if (x == null || y == null || x <= 0 || y <= 0)
     {
